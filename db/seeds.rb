@@ -127,5 +127,12 @@
             price: "$118.55 USD",
             description: "Wireless gaming mouse",
             product_type: "Mouse"
+        },
+        {
+            name: "Razer Deathadder",
+            brand: "Razer",
+            price: "$118.55 USD",
+            description: "Wireless gaming mouse",
+            product_type: "Mouse"
         }
     ])

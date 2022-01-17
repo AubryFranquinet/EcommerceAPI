@@ -10,7 +10,7 @@ class Api::V1::ProductsController < ApplicationController
             brand: params[:brand],
             price: params[:price],
             description: params[:description],
-            product_type: params[:type],
+            product_type: params[:product_type],
         )
         if product.save
             render json: product, status: 200
