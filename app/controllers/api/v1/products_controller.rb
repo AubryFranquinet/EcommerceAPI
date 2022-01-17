@@ -10,6 +10,7 @@ class Api::V1::ProductsController < ApplicationController
             brand: params[:brand],
             price: params[:price],
             description: params[:description],
+            type: params[:type],
         )
         if product.save
             render json: product, status: 200
@@ -34,7 +35,8 @@ class Api::V1::ProductsController < ApplicationController
             :brand,
             :price,
             :description,
-        ])
+            :type,        
+            ])
     end
 
 end
