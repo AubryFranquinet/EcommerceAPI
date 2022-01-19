@@ -1,24 +1,43 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Nil.com API
 
-Things you may want to cover:
+API made with Ruby on Rails to create a mockup Ecommerce website. You'll need credentials to access it.
 
-* Ruby version
 
-* System dependencies
+## API Reference
 
-* Configuration
+#### Get all items
 
-* Database creation
+```http
+  GET /api/v1/products
+```
 
-* Database initialization
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
 
-* How to run the test suite
+#### Get item
 
-* Services (job queues, cache servers, search engines, etc.)
+```http
+  GET /api/v1/products/[product_id]
+```
 
-* Deployment instructions
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
 
-* ...
+
+
+  
+## Tech Stack
+
+**Hosting:** Heroku (both for database and app itself)
+
+**Server:** Ruby on Rails
+
+  
+## Authors
+
+- [@AubryFranquinet](https://github.com/AubryFranquinet)
+
+  
